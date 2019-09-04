@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style.css">
+   <title>Planetamiodu - Bartłomiej Kozioł</title>
+   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+   <script src="jquery.vide.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+<body onload="followMouse();">
+ <!--<div class="mouse-ball">
+            <div id="ball"></div>
+   </div>-->
+   <header data-vide-bg="intro-bee" style="background: rgba(0,0,0,0.3); overflow: hidden;">
+         <button class="hamburger">
+               <span class="hamburger__box">
+                  <span class="hamburger__inner"></span>
+               </span>
+            </button>
+            <div class="navigation">
+               <ul class="navigation__list">
+                  <li class="navigation__item"><a href="#">O mnie</a></li>
+                  <li class="navigation__item"><a href="#">Przepisy</a></li>
+                  <li class="navigation__item"><a href="#">Produkty</a></li>
+                  <li class="navigation__item"><a href="#">Kontakt</a></li>
+               </ul>
+            </div>
+      </header>
+
+
+   <main>
+
+      <div class="container about">
+         <h1>O mnie</h1>
+         <div class="user">
+               <p class="user-text">Bartłomiej</p>
+               <p class="user-text surname">Kozioł</p>
+               <img src="./img/user.jpg" alt="">
+               <div class="text-about">
+                     <p>Kucharz z zawodu. Doświadczony sushi master z ponad 10 letnim doświadczeniem w Polsce i za granicą . Miłośnik kuchni azjatyckiej. W życiu prywatnym wielki pasjonat dobrego jedzenia oraz pszczelarstwa. Od 10 lat pracuje w najstarszym i najlepszym sushi barze w Gliwicach - Arigato.</p>
+                  </div>
+
+         </div>
+
+
+      </div>
+      <div class="container recipt">
+         <h1>Słodko, zdrowo, naturalnie</h1>
+      </div>
+      <div class="container products">
+         <h1>Produkty</h1>
+      </div>
+      <div class="container contact">
+         <h1>Kontakt</h1>
+      </div>
+   </main>
+
+
+
+   <script>
+      var $ = document.querySelector.bind(document);
+      var $on = document.addEventListener.bind(document);
+
+      var xmouse, ymouse;
+      $on('mousemove', function(e) {
+         xmouse = e.clientX || e.pageX;
+         ymouse = e.clientY || e.pageY;
+      });
+
+      var ball = $('#ball');
+      var x = void 0,
+         y = void 0,
+         dx = void 0,
+         dy = void 0,
+         tx = void 0,
+         ty = void 0,
+         key = -1;
+
+      var followMouse = function followMouse() {
+         key = requestAnimationFrame(followMouse);
+
+         if (!x || !y) {
+            x = xmouse;
+            y = ymouse;
+         } else {
+            dx = (xmouse - x) * 0.125;
+            dy = (ymouse - y) * 0.125;
+            if (Math.abs(dx) + Math.abs(dy) < 0.1) {
+               x = xmouse;
+               y = ymouse;
+            } else {
+               x += dx;
+               y += dy;
+            }
+         }
+
+         ball.style.left = x + 'px';
+         ball.style.top = y + 'px';
+      }
+
+      const hamburger = document.querySelector('.hamburger');
+      const nav = document.querySelector('.navigation');
+
+
+      const handleClick = () => {
+         hamburger.classList.toggle('hamburger--active');
+         nav.classList.toggle('navigation--active');
+      }
+
+      hamburger.addEventListener('click', handleClick);
+      </script>
+</body>
+</html>
