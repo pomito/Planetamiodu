@@ -34,9 +34,6 @@ header {
 }
 .hamburger--active {
 	transform: translateX(250px);
-	background: gold;
-	border-bottom: 3px solid #0b0b0b;
-	border-right: 3px solid #0b0b0b;
 }
 .hamburger__box {
 	width: 35px;
@@ -92,7 +89,7 @@ header {
 	background-color: gold;
 	top: 0;
 	left: 0;
-	border-right: 3px solid #0b0b0b;
+	border-right: 5px solid #0b0b0b;
 	transform: translateX(-250px);
 }
 
@@ -183,7 +180,7 @@ main {
 	border-radius: 20px;
 	width: 604px;
 	position: relative;
-	bottom: 188px;
+	bottom: 130px;
 	/* height: 370px; */
 	-webkit-box-shadow: -15px 15px 0px 2px rgba(0, 0, 0, 1);
 	-moz-box-shadow: -15px 15px 0px 2px rgba(0, 0, 0, 1);
@@ -227,15 +224,14 @@ main {
 	width: 2254.71px;
 	position: relative;
 	right: 577px;
-	bottom: 271px;
-	background: #fff;
+	bottom: 255px;
 	z-index: -1;
 }
 
 .wave-two {
 	width: 2176px;
 	position: relative;
-	bottom: 706px;
+	bottom: 697px;
 	right: 607px;
 	z-index: 1;
 }
@@ -244,39 +240,16 @@ main {
 }
 
 .title-recipt {
-	position: relative;
-	bottom: 14px;
+	margin-top: 20px;
 }
 
-.wave-three {
-	width: 1920px;
-	transform: scale(-1, -1);
-	position: relative;
-	top: 732px;
-	background: #fff;
-}
-.wave-four {
-	width: 1920px;
-	transform: scale(-1, -1);
-	position: relative;
-	bottom: 294px;
-}
 .contact {
 	background-color: blue;
 }
-
-.social-media {
-	background-color: #0b0b0b;
-	width: 100vw;
-	height: 80px;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.social-media a {
-	margin: 0 20px;
+@media only screen and (max-width: 769px) {
+	.mouse-ball {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 769px) {
@@ -294,98 +267,5 @@ main {
 	}
 	.hamburger {
 		display: none;
-	}
-}
-
-@media only screen and (max-width: 769px) {
-	.mouse-ball {
-		display: none;
-	}
-	.wave-three {
-		width: 1920px;
-		transform: scale(-1, -1);
-		position: relative;
-		top: 750px;
-		background: #fff;
-	}
-	.wave-four {
-		width: 1920px;
-		transform: scale(-1, -1);
-		position: relative;
-		bottom: 320px;
-	}
-}
-
-@media only screen and (max-width: 425px) {
-	.wave-three {
-		width: 1920px;
-		transform: scale(-1, -1);
-		position: relative;
-		top: 700px;
-		background: #fff;
-	}
-	.wave-four {
-		width: 1920px;
-		transform: scale(-1, -1);
-		position: relative;
-		bottom: 321px;
-	}
-
-	.title-recipt {
-		position: relative;
-		bottom: 73px;
-	}
-}
-@media only screen and (min-width: 1440px) {
-	.user {
-		position: relative;
-		top: 77%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
-	.user img {
-		width: 666px;
-	}
-
-	.user-text {
-		font-size: 185px;
-		top: 403px;
-		left: 94px;
-	}
-
-	.surname {
-		position: relative;
-		left: 265px;
-	}
-
-	.text-about p {
-		font-size: 32px;
-	}
-
-	.text-about {
-		width: 867px;
-	}
-
-	.title-recipt {
-		top: 310px;
-	}
-
-	h1 {
-		font-size: 72px;
-	}
-
-	.wave-three {
-		width: 1920px;
-		transform: scale(-1, -1);
-		position: relative;
-		top: 732px;
-		background: #fff;
-	}
-	.wave-four {
-		width: 1920px;
-		transform: scale(-1, -1);
-		position: relative;
-		bottom: 227px;
 	}
 }
