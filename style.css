@@ -23,9 +23,6 @@ header {
 	margin: 0;
 	padding: 10px;
 	position: fixed;
-	/* border: 2px solid gold; */
-	/* border-radius: 20px; */
-	/* background-color: rgba(0, 0, 0, 0.3); */
 }
 .hamburger,
 .navigation {
@@ -109,7 +106,6 @@ header {
 	text-decoration: none;
 	font-family: Poppins;
 	color: #0b0b0b;
-	/* text-transform: uppercase; */
 	opacity: 1;
 	font-size: 1.2em;
 	font-weight: 600;
@@ -136,11 +132,6 @@ header {
 	color: #fff;
 }
 
-p.logo {
-}
-
-p.logo {
-}
 .mouse-ball {
 	position: absolute;
 	top: 0;
@@ -173,7 +164,6 @@ main {
 .container {
 	height: auto;
 	display: flex;
-	/* z-index: 6; */
 	flex-direction: column;
 	justify-content: flex-start;
 }
@@ -231,9 +221,6 @@ main {
 	font-family: Georgia;
 }
 
-.about {
-	/* height: 1200px; */
-}
 .surname {
 	position: relative;
 	bottom: 20px;
@@ -277,6 +264,7 @@ main {
 }
 .recipt {
 	background-color: #ffde3a;
+	height: 812px;
 }
 
 .title-recipt {
@@ -300,7 +288,6 @@ main {
 	height: 2px;
 	position: relative;
 	bottom: 68px;
-	/* right: 257px; */
 }
 
 .waves-bottom {
@@ -422,7 +409,6 @@ h3 {
 	background-color: black;
 	border-radius: 20px;
 	color: #fff;
-	/* margin: auto; */
 	display: flex;
 	border: 10px solid black;
 	margin-top: 20px;
@@ -450,6 +436,7 @@ h3 {
 	flex-direction: row;
 	justify-content: center;
 }
+
 @media only screen and (max-width: 769px) {
 	.mouse-ball {
 		display: none;
@@ -475,9 +462,6 @@ h3 {
 	h1 {
 		font-size: 3em;
 	}
-
-	.logo {
-	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -485,9 +469,9 @@ h3 {
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
-		/* margin: 0px 10px; */
 	}
 }
+
 @media only screen and (max-width: 425px) {
 	.text-about p {
 		font-size: 1em;
@@ -518,6 +502,7 @@ h3 {
 		margin: 5px;
 	}
 }
+
 @media only screen and (min-width: 1024px) {
 	.user {
 		position: relative;
@@ -537,10 +522,8 @@ h3 {
 		top: 131px;
 	}
 }
-@media only screen and (min-width: 1440px) {
-	.img-recipt-two {
-	}
 
+@media only screen and (min-width: 1440px) {
 	.user-text {
 		font-size: 120px;
 		position: relative;
@@ -548,6 +531,7 @@ h3 {
 		left: 185px;
 	}
 }
+
 @media only screen and (min-width: 1440px) {
 	.user img {
 		width: 666px;
