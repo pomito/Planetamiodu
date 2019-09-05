@@ -123,17 +123,8 @@ header {
 }
 
 .logo {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: Poppins;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 18px;
-	text-align: center;
-	font-weight: 600;
-	letter-spacing: 30px;
+	display: flex;
+	justify-content: c;
 }
 .mouse-ball {
 	position: absolute;
@@ -463,9 +454,9 @@ h3 {
 @media only screen and (min-width: 1024px) {
 	.user {
 		position: relative;
-		top: 50%;
+		top: 34%;
 		left: 50%;
-		transform: translate(-50%, -50%);
+		transform: translate(-64%, -50%);
 	}
 	.hamburger {
 		display: none;
