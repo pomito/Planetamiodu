@@ -122,6 +122,19 @@ header {
 	letter-spacing: 1.5px;
 }
 
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: Poppins;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 30px;
+}
 .mouse-ball {
 	position: absolute;
 	top: 0;
@@ -176,6 +189,7 @@ main {
 .text-about {
 	background-color: gold;
 	border-radius: 20px;
+	max-width: 600px;
 	width: auto;
 	position: relative;
 	bottom: 150px;
@@ -305,7 +319,7 @@ main {
 .white-box {
 	background-color: white;
 	width: 90%;
-	height: 400px;
+	height: auto;
 	border-radius: 20px;
 	margin: auto;
 	position: relative;
@@ -313,17 +327,18 @@ main {
 }
 
 .text-recipt p {
-	font-size: 21px;
+	font-size: 18px;
 	text-align: justify;
 	margin: auto;
 	padding: 20px;
+	color: gray;
 }
 
 .contact-box {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin: 0px 108px;
+	margin: auto;
 }
 
 .box-text-recipt {
@@ -343,6 +358,9 @@ input[type=text]:focus {
 	border: 2px solid black;
 }
 
+input[type=text]:hover {
+	border: 2px solid black;
+}
 #wiadomosc {
 	height: 200px;
 }
@@ -350,14 +368,15 @@ input[type=text]:focus {
 h3 {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	text-transform: uppercase;
-	font-size: 44px;
+	font-size: 45px;
 	font-weight: 100;
 	margin-bottom: 25px;
+	width: 400px;
 }
 .form p {
 	color: gray;
 	font-size: 21px;
-	letter-spacing: 10px;
+	letter-spacing: 8px;
 	text-transform: uppercase;
 	font-family: Arial, Helvetica, sans-serif;
 	margin-bottom: 0px;
@@ -404,7 +423,13 @@ h3 {
 		display: none;
 	}
 	.img-recipt-two {
-		display: none;
+		display: flex;
+		margin: auto;
+		border-radius: 20px;
+		position: relative;
+		top: 115px;
+		max-width: 375px;
+		width: 75%;
 	}
 	.text-recipt-one {
 		display: none;
@@ -438,15 +463,28 @@ h3 {
 @media only screen and (min-width: 1024px) {
 	.user {
 		position: relative;
-		top: 34%;
+		top: 50%;
 		left: 50%;
-		transform: translate(-64%, -50%);
+		transform: translate(-50%, -50%);
 	}
 	.hamburger {
 		display: none;
 	}
-}
 
+	.text-about p {
+		font-size: 21px;
+	}
+
+	.user-text {
+		font-size: 54px;
+		top: 131px;
+	}
+}
+@media only screen and (min-width: 1440px) {
+	.img-recipt-two {
+		display: flex;
+	}
+}
 @media only screen and (min-width: 1440px) {
 	.user img {
 		width: 666px;
