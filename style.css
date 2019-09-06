@@ -100,12 +100,6 @@ header {
 
 .wave-navigation {
 	display: inline;
-	transform: rotate(269deg);
-	position: relative;
-	width: 104vh;
-	top: 75px;
-	right: 269px;
-	background: transparent;
 }
 .navigation__item {
 	margin-bottom: 20px;
