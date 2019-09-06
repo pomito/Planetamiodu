@@ -3,14 +3,20 @@
 }
 
 html,
-body,
-header {
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	/* cursor: none; */
+}
+
+.header {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100vh;
 	overflow-x: hidden;
-	max-width: 1920px;
 	margin: auto;
 	cursor: none;
 }
@@ -159,13 +165,15 @@ header {
 	z-index: 50;
 }
 main {
-	max-width: 1920px;
+	/* max-width: 1920px; */
 	width: 100%;
 	margin: auto;
 	background: #fff;
 }
 
 .container {
+	max-width: 1920px;
+	margin: 0 auto;
 	height: auto;
 	display: flex;
 	flex-direction: column;
@@ -267,13 +275,17 @@ main {
 	bottom: 383px;
 }
 .recipt {
+	/* background-color: #ffde3a; przenisione do recipt inner */
+	/* height: 812px;  - nie powinno byc na sztywno ustawiane , tylko do contentu + margin/paddingi/bordery */
+}
+
+.recipt-inner {
 	background-color: #ffde3a;
-	height: 812px;
 }
 
 .title-recipt {
-	position: relative;
-	top: 94px;
+	/* position: relative;
+	top: 94px; */
 }
 
 .contact {
@@ -344,7 +356,7 @@ main {
 	flex-direction: row;
 	justify-content: space-around;
 	margin: auto;
-	width: 100vh;
+	/* width: 100vh; */
 	background-color: #ffde3a;
 }
 
@@ -432,7 +444,7 @@ h3 {
 }
 
 .products {
-	height: 812px;
+	/* height: 812px; */
 }
 
 .img-slodko {
@@ -569,4 +581,42 @@ h3 {
 		width: 400px;
 		margin: 0px 200px;
 	}
+}
+
+
+/* NOWE CLASSY - zamien sobie potem */
+/* suffix -next usun jak wywalisz stare waves */
+
+.waves-next {
+	position: relative;
+}
+
+.wave-next {
+	display: block;
+}
+
+.wave-next-one {}
+
+.wave-next-two {
+	bottom: -20px;
+	position: absolute;
+}
+
+.wave-next-three {
+	top: 20px;
+	transform: scale(-1, -1);
+	position: absolute;
+}
+
+.wave-next-four {
+	transform: scale(-1, -1);
+}
+
+.wave-next-five {
+	transform: scaleX(-1);
+}
+
+.wave-next-six {
+	position: absolute;
+	bottom: 0;
 }
