@@ -98,6 +98,15 @@ header {
 	margin-top: 50px;
 }
 
+.wave-navigation {
+	display: inline;
+	transform: rotate(269deg);
+	position: relative;
+	width: 104vh;
+	top: 75px;
+	right: 269px;
+	background: transparent;
+}
 .navigation__item {
 	margin-bottom: 20px;
 }
@@ -478,7 +487,7 @@ h3 {
 	}
 
 	.logo {
-		letter-spacing: 10px;
+		letter-spacing: 15px;
 	}
 
 	.contact {
@@ -507,7 +516,7 @@ h3 {
 	.user {
 		position: relative;
 		bottom: 175px;
-		left: 300px;
+		left: 20vh;
 	}
 	.hamburger {
 		display: none;
@@ -530,6 +539,14 @@ h3 {
 		top: 296px;
 		left: 185px;
 	}
+
+	.user-text p {
+		font-size: 2em;
+	}
+
+	.text-about p {
+		font-size: 21;
+	}
 }
 
 @media only screen and (min-width: 1440px) {
@@ -543,7 +560,7 @@ h3 {
 	}
 
 	.text-about {
-		width: 678px;
+		max-width: 867px;
 	}
 }
 
