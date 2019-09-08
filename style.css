@@ -18,7 +18,7 @@ header {
 header {
 	overflow: hidden;
 	background-image: url(./img/intro-bee.png);
-	background: rgba(0, 0, 0, 0.3);
+	opacity: 0.99;
 }
 
 .hamburger {
