@@ -17,8 +17,8 @@ header {
 
 header {
 	overflow: hidden;
-	background-image: url(./img/intro-bee.png);
-	opacity: 0.99;
+	background-color: red;
+	background-image: linear-gradient(to right, orange, yellow);
 }
 
 .hamburger {
