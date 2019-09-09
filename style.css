@@ -17,8 +17,6 @@ header {
 
 header {
 	overflow: hidden;
-	background-color: red;
-	background-image: linear-gradient(to right, orange, yellow);
 }
 
 .hamburger {
@@ -90,7 +88,7 @@ header {
 	height: 100vh;
 	width: 250px;
 	position: fixed;
-	background-color: gold;
+	background-color: #ffd700;
 	top: 0;
 	left: 0;
 	border-right: 5px solid #0b0b0b;
@@ -194,7 +192,7 @@ main {
 }
 
 .text-about {
-	background-color: gold;
+	background-image: linear-gradient(to left, orange, yellow);
 	border-radius: 20px;
 	max-width: 600px;
 	width: auto;
@@ -284,7 +282,7 @@ main {
 }
 
 .contact {
-	background-color: #ffde3a;
+	background-color: #ffd700;
 	position: relative;
 	height: auto;
 	width: auto;
@@ -345,7 +343,7 @@ main {
 	text-align: justify;
 	margin: auto;
 	padding: 20px;
-	color: gray;
+	color: black;
 	font-family: Poppins;
 }
 
@@ -355,7 +353,7 @@ main {
 	justify-content: space-around;
 	margin: auto;
 	width: 100vh;
-	background-color: #ffde3a;
+	background-color: #ffd700;
 }
 
 .box-text-recipt {
@@ -432,17 +430,16 @@ h3 {
 }
 
 .con {
-	background: #ffde3a;
-	padding: 4px;
+	background: #ffd700;
 }
 .text-info {
-	color: gray;
+	color: black;
 	font-size: 15px;
 	font-family: Poppins;
 }
 
 .products {
-	height: 812px;
+	/* height: 812px; */
 }
 
 .img-slodko {
@@ -504,6 +501,7 @@ h3 {
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
+		background-color: #ffd700;
 	}
 
 	input[type=text] {
