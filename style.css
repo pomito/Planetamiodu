@@ -14,12 +14,10 @@ body {
 }
 
 header {
-	margin: 0;
 	padding: 0;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
-	overflow-x: hidden;
-	max-width: 1920px;
+	overflow: hidden;
 	margin: auto;
 	/*cursor: none;*/
 }
@@ -639,5 +637,15 @@ h3 {
 
 	form {
 		margin: 0px auto;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.contact {
+		margin-right: 100px;
+	}
+
+	.form {
+		margin-left: 100px;
 	}
 }
