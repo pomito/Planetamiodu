@@ -625,6 +625,14 @@ h3 {
 	.text-about {
 		max-width: 867px;
 	}
+
+	.contact {
+		margin-right: 100px;
+	}
+
+	.form {
+		margin-left: 100px;
+	}
 }
 
 @media only screen and (min-width: 426px) {
@@ -637,15 +645,5 @@ h3 {
 
 	form {
 		margin: 0px auto;
-	}
-}
-
-@media only screen and (min-width: 1440px) {
-	.contact {
-		margin-right: 100px;
-	}
-
-	.form {
-		margin-left: 100px;
 	}
 }
