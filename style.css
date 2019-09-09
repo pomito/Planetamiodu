@@ -263,6 +263,7 @@ main {
 	top: 6px;
 	transform: scale(-1, -1);
 	position: absolute;
+	width: 105%;
 	background: #fff;
 }
 
