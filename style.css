@@ -178,6 +178,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	overflow: hidden;
 }
 
 .container h1 {
@@ -628,7 +629,7 @@ h3 {
 		display: flex;
 		justify-content: center;
 		position: relative;
-		bottom: 60px;
+		bottom: 45px;
 	}
 
 	form {
