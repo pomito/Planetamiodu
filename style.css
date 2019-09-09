@@ -249,10 +249,13 @@ main {
 }
 
 .wave-one {
+	position: relative;
+	top: 3px;
+	width: 110%;
 }
 
 .wave-two {
-	bottom: -20px;
+	bottom: -4px;
 	position: absolute;
 }
 
@@ -494,6 +497,7 @@ h3 {
 	.contact {
 		padding: 4px;
 		margin: 2px auto;
+		margin-bottom: 25px;
 	}
 
 	.contact-box {
