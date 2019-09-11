@@ -297,11 +297,13 @@ main {
 	width: 300px;
 	border-radius: 20px;
 	/* display: none; */
+	height: 450px;
 }
 .img-recipt-two {
 	width: 320px;
 	border-radius: 20px;
 	/* display: none; */
+	height: 450px;
 }
 .social-media {
 	background-color: #0b0b0b;
@@ -463,7 +465,8 @@ h3 {
 		border-radius: 20px;
 		position: relative;
 		max-width: 375px;
-		width: 90%;
+		width: 300px;
+		height: 370px;
 		margin-bottom: 30px;
 	}
 }
@@ -523,7 +526,7 @@ h3 {
 
 	.img-recipt {
 		margin: 10px auto;
-		width: 90%;
+		width: 300px;
 	}
 }
 
