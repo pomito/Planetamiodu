@@ -17,6 +17,7 @@
         href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap&subset=latin-ext"
         rel="stylesheet"
       />
+
     </head>
     <body onload="followMouse();">
 <!--
@@ -27,7 +28,14 @@
 
 
 -->
-
+<div  class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item"><a href="#omnie">O mnie</a></li>
+    <li class="navigation__item"><a href="#przepisy">Przepisy</a></li>
+    <li class="navigation__item"><a href="#produkty">Produkty</a></li>
+    <li class="navigation__item"><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</div>
       <header
         class="header"
         data-vide-bg="Planetamiodu"
@@ -39,14 +47,7 @@
           </span>
         </button>
         <p class="logo">Planetamiodu</p>
-        <div class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="#omnie">O mnie</a></li>
-            <li class="navigation__item"><a href="#przepisy">Przepisy</a></li>
-            <li class="navigation__item"><a href="#produkty">Produkty</a></li>
-            <li class="navigation__item"><a href="#kontakt">Kontakt</a></li>
-          </ul>
-        </div>
+
       </header>
 
       <main>
@@ -103,24 +104,43 @@
              <div class="box-text-recipt">
                <div class="text-recipt text-recipt-one">
                  <p>
-                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                   Perspiciatis ad aspernatur architecto temporibus dicta,
-                   dolorum, ipsa, vero culpa enim quo tempore! Numquam fugiat non
-                   maxime vero eveniet est molestiae cum.
-                 </p>
-               </div>
-               <div class="text-recipt white-box">
-                 <p>
-                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                   Perspiciatis ad aspernatur architecto temporibus dicta,
-                   dolorum, ipsa, vero culpa enim quo tempore! Numquam fugiat non
-                   maxime vero eveniet est molestiae cum.
+                  Słodko, zdrowo i w dodatku naturalnie?
+                  Czy jest to w ogóle możliwe? Oczywiście,
+                  że tak jeżeli mowa o miodzie, który zyskał miano najsłodszego,
+                  a zarazem bardzo zdrowego produktu spożywczego.
+                  Miód wszakże pomaga organizmowi walczyć z drobnoustrojami,
+                  pobudza układ odpornościowy oraz poprawia trawienie.
+                  Miód posiada również w swoim składzie właściwości konserwujące oraz
+                  przeciwutleniające, które działają antybiotycznie oraz regeneracyjnie
+                  pomagące w leczeniu wielu ran. Co ciekawe miód jest jednym z nielicznych
+                  produktów odżywczych, który się nie psuje. O dobroczynnych
+                  właściwościach miodu mogą świadczyć słowa wypowiedziane
+                  przez starożytnego filozofa Demokryta, który pytany o to,
+                  jak w dobrym zdrowiu dożyć sędziwego wieku odpowiadał
+                  "z zewnątrz olej, a do wewnątrz miód".
                  </p>
                </div>
                <div class="img-slodko">
-                 <img class="img-recipt" src="./img/recipt.jpg" alt="" />
-                 <img class="img-recipt-two" src="./img/recipt-two.jpg" alt="" />
+                <img class="img-recipt" src="./img/recipt.jpg" alt="" />
+                <img class="img-recipt-two" src="./img/recipt-two.jpg" alt="" />
+              </div>
+               <div class="text-recipt white-box">
+                 <p>
+                  Miód można wykorzystać na wiele róznych sposobów:
+                  jako lekarstwo na kaszel, do odżywiania i nawilżania skóry,
+                  na problemy z zaśnięciem, na trądzik, suche usta,
+                  a także na kaca 🙂 Natomiast używajac go
+                  jako produktu spożywczego miód może służyć
+                  jako marynata, być zdrowszym zamiennikiem cukru.
+                  Miód także doskonale łączy się z różnego rodzaju
+                  sałatkami, może być idealnym dodatkiem do ryb.
+                  Potrawy: marynowane skrzydełka w miodzie,
+                  pieczony kurczak posmarowany miodem i posypany
+                  sezamem, miodowe batony z płatków owsianych,
+                  miodowe żeberka z Burbonem i limonką i wiele więcej.
+                 </p>
                </div>
+
              </div>
           </div>
          </div>
@@ -287,6 +307,22 @@
       }
 
       hamburger.addEventListener('click', handleClick);
+
+
+
+
+        $(function(){
+        var navbar = $('.navigation');
+
+        $(window).scroll(function(){
+          if($(window).scrollTop() <= 40){
+            navbar.addClass('navbar-scroll');
+          } else {
+            navbar.removeClass('navbar-scroll');
+          }
+        });
+      });
+
       </script>
 </body>
 </html>
