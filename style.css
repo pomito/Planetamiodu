@@ -262,11 +262,7 @@ main {
 .wave-two {
 	bottom: -4px;
 	position: absolute;
-	transition: transform 0.3s;
-}
-.wave-two:hover,
-.wave-six:hover {
-	transform: translateY(40px);
+	transition: transform 0.5s;
 }
 
 .wave-three {
@@ -279,7 +275,7 @@ main {
 
 .wave-four {
 	transform: scale(-1, -1);
-	transition: transform 0.3s;
+	transition: transform .5s;
 }
 
 .wave-five {
@@ -289,10 +285,22 @@ main {
 .wave-six {
 	position: absolute;
 	bottom: -5px;
-	transition: transform 0.3s;
+	transition: transform .5s;
 }
 .recipt {
 	background-color: #ffde3a;
+}
+
+.potrawy {
+	list-style-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIHNlcmlmOmlkPSJzaGFwZSAyMyIgZD0iTTEyLS4wMDFsMTEgNnYxMmwtMTEgNi0xMS02di0xMmwxMS02eiIvPjwvc3ZnPg==);
+	margin-bottom: 50px;
+}
+
+.potrawy li {
+	font-size: 18px;
+	font-family: Poppins;
+	margin: 10px;
+	padding-bottom: 10px;
 }
 
 .contact {
@@ -384,6 +392,7 @@ input[type=text]:focus {
 input[type=text]:hover {
 	border: 2px solid black;
 }
+
 #wiadomosc {
 	height: 200px;
 	border-radius: 20px;
@@ -394,6 +403,13 @@ input[type=text]:hover {
 	font-weight: 400;
 }
 
+#wiadomosc:hover {
+	border: 2px solid black;
+}
+
+#wiadomosc:focus {
+	border: 2px solid black;
+}
 h3 {
 	font-family: Poppins;
 	text-transform: uppercase;
@@ -475,6 +491,10 @@ h3 {
 	font-weight: 600;
 }
 
+.sm-icon:hover {
+	fill: #fff;
+}
+
 @media only screen and (max-width: 769px) {
 	.mouse-ball {
 		display: none;
@@ -497,6 +517,10 @@ h3 {
 @media only screen and (min-width: 768px) {
 	h1 {
 		font-size: 3em;
+	}
+	.wave-two:hover,
+	.wave-six:hover {
+		transform: translateY(40px);
 	}
 }
 
