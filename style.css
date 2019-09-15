@@ -187,7 +187,7 @@ main {
 }
 
 .container h1 {
-	margin-left: 10px;
+	margin-left: 20px;
 	font-family: Poppins;
 	width: 100%;
 	z-index: 1;
@@ -217,7 +217,7 @@ main {
 	padding: 20px;
 	font-size: 20px;
 	text-align: left;
-	font-family: Poppins;
+	font-family: Lato;
 	margin: 0px auto;
 	letter-spacing: 1px;
 }
@@ -262,20 +262,20 @@ main {
 .wave-two {
 	bottom: -4px;
 	position: absolute;
-	transition: transform 0.5s;
+	transition: transform .7s;
 }
 
 .wave-three {
-	top: 6px;
-	transform: scale(-1, -1);
+	top: 40px;
 	position: absolute;
 	width: 105%;
 	background: #fff;
 }
 
 .wave-four {
-	transform: scale(-1, -1);
-	transition: transform .5s;
+	transition: transform .7s;
+	z-index: 1;
+	position: relative;
 }
 
 .wave-five {
@@ -285,7 +285,7 @@ main {
 .wave-six {
 	position: absolute;
 	bottom: -5px;
-	transition: transform .5s;
+	transition: transform .7s;
 }
 .recipt {
 	background-color: #ffde3a;
@@ -298,7 +298,7 @@ main {
 
 .potrawy li {
 	font-size: 18px;
-	font-family: Poppins;
+	font-family: Lato;
 	margin: 10px;
 	padding-bottom: 10px;
 }
@@ -360,7 +360,7 @@ main {
 	margin: auto;
 	padding: 10px;
 	color: black;
-	font-family: Poppins;
+	font-family: Lato;
 	margin-bottom: 20px;
 }
 
@@ -471,7 +471,7 @@ h3 {
 .text-info {
 	color: black;
 	font-size: 15px;
-	font-family: Poppins;
+	font-family: Lato;
 	justify-content: center;
 	margin: 0px auto 5px auto;
 }
@@ -491,10 +491,21 @@ h3 {
 	font-weight: 600;
 }
 
-.sm-icon:hover {
-	fill: #fff;
+
+.sm-circle{
+	width:42px;
+	height:42px;
+	background-color:#fff;
+	border-radius:50%;
+}
+.sm-circle:hover{
+	background-color: #ffde3a;
 }
 
+.sm-icon{
+	margin:5px;
+	padding:2px;
+}
 @media only screen and (max-width: 769px) {
 	.mouse-ball {
 		display: none;
@@ -519,7 +530,8 @@ h3 {
 		font-size: 3em;
 	}
 	.wave-two:hover,
-	.wave-six:hover {
+	.wave-six:hover,
+	.wave-four:hover {
 		transform: translateY(40px);
 	}
 }
