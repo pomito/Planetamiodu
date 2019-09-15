@@ -491,20 +491,19 @@ h3 {
 	font-weight: 600;
 }
 
-
-.sm-circle{
-	width:42px;
-	height:42px;
-	background-color:#fff;
-	border-radius:50%;
+.sm-circle {
+	width: 42px;
+	height: 42px;
+	background-color: #fff;
+	border-radius: 50%;
 }
-.sm-circle:hover{
+.sm-circle:hover {
 	background-color: #ffde3a;
 }
 
-.sm-icon{
-	margin:5px;
-	padding:2px;
+.sm-icon {
+	margin: 5px;
+	padding: 2px;
 }
 @media only screen and (max-width: 769px) {
 	.mouse-ball {
@@ -541,6 +540,10 @@ h3 {
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
+	}
+
+	.wave-three {
+		top: 4px;
 	}
 }
 
