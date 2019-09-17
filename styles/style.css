@@ -214,7 +214,7 @@ main {
 	background-color: #ffd700;
 }
 .text-about p {
-	padding: 20px;
+	padding: 15px;
 	font-size: 20px;
 	text-align: left;
 	font-family: Lato;
@@ -394,13 +394,13 @@ input[type=text]:hover {
 }
 
 #wiadomosc {
-	height: 200px;
 	border-radius: 20px;
 	padding: 5px 20px;
 	font-size: 1.3em;
 	border: 2px solid gray;
-	width: 300px;
 	font-weight: 400;
+	height: 200px;
+	width: 300px;
 }
 
 #wiadomosc:hover {
@@ -440,6 +440,7 @@ h3 {
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	margin: 5px auto;
+	font-size: 1.3em;
 }
 
 .a-info {
@@ -474,6 +475,7 @@ h3 {
 	font-family: Lato;
 	justify-content: center;
 	margin: 0px auto 5px auto;
+	font-size: 1.1em;
 }
 
 .img-slodko {
@@ -531,7 +533,24 @@ h3 {
 	.wave-two:hover,
 	.wave-six:hover,
 	.wave-four:hover {
-		transform: translateY(40px);
+		transform: translateY(38.5px);
+	}
+
+	.about img {
+		right: 0;
+	}
+	.user-text {
+		left: 200px;
+	}
+	.surname {
+		left: 200px;
+	}
+
+	.text-about {
+		left: 58px;
+	}
+	.user {
+		margin: auto;
 	}
 }
 
@@ -596,7 +615,7 @@ h3 {
 	.user {
 		position: relative;
 		margin: auto;
-		bottom: 100px;
+		/* bottom: 100px; */
 	}
 	.hamburger {
 		display: none;
@@ -665,14 +684,20 @@ h3 {
 	.img-recipt-two {
 		margin: 0px 10px;
 	}
+	.text-recipt {
+		width: 75%;
+	}
+	.text-recipt p {
+		font-size: 26px;
+	}
 }
 
 @media only screen and (min-width: 1440px) {
 	.user-text {
 		font-size: 120px;
 		position: relative;
-		top: 296px;
-		left: 185px;
+		top: 267px;
+		left: 310px;
 	}
 
 	.user-text p {
@@ -680,7 +705,10 @@ h3 {
 	}
 
 	.text-about p {
-		font-size: 21;
+	}
+
+	.user {
+		bottom: 100px;
 	}
 }
 
@@ -691,7 +719,8 @@ h3 {
 
 	.surname {
 		position: relative;
-		left: 323px;
+		left: 413px;
+		top: 231px;
 	}
 
 	.text-about {
@@ -704,6 +733,20 @@ h3 {
 
 	.form {
 		margin-left: 100px;
+	}
+	.text-about {
+		left: 200px;
+		height: 230px;
+	}
+	.text-about p {
+		font-size: 26px;
+		padding: 20px;
+	}
+	.text-recipt {
+		width: 75%;
+	}
+	.text-recipt p {
+		font-size: 26px;
 	}
 }
 

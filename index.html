@@ -1,63 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
+<html lang="pl">
+  <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <link rel="stylesheet" href="style.css" />
-      <title>Planetamiodu | Bartłomiej Kozioł</title>
       <meta name="theme-color" content="#ffde3a">
-      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-      <script src="jquery.vide.js"></script>
+      <title>Planetamiodu | Bartłomiej Kozioł</title>
+      <link rel="stylesheet" href="styles/style.css" />
       <link
-        href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap&subset=latin-ext"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap&subset=latin-ext"
+      rel="stylesheet"
       />
       <link
       href="https://fonts.googleapis.com/css?family=Lato&display=swap&subset=latin-ext"
       rel="stylesheet"
       />
+      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+      <script src="scripts/jquery.vide.js"></script>
+  </head>
 
-    </head>
-    <body onload="followMouse();">
-<!--
-
-   <div class="mouse-ball">
-        <div id="ball"></div>
-      </div>
-
-
+  <body onload="followMouse();">
+<!--<div class="mouse-ball"><div id="ball"></div></div>
 -->
-<div  class="navigation">
-  <ul class="navigation__list">
-    <li class="navigation__item"><a href="#omnie">O mnie</a></li>
-    <li class="navigation__item"><a href="#przepisy">Przepisy</a></li>
-    <li class="navigation__item"><a href="#produkty">Produkty</a></li>
-    <li class="navigation__item"><a href="#kontakt">Kontakt</a></li>
-  </ul>
-</div>
-      <header
-        class="header"
-        data-vide-bg="Planetamiodu"
-        style="background-color:rgba(0,0,0,0.1);"
-      >
-        <button class="hamburger">
-          <span class="hamburger__box">
-            <span class="hamburger__inner"></span>
-          </span>
-        </button>
-        <p class="logo">Planetamiodu</p>
+    <div  class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#omnie">O mnie</a></li>
+        <li class="navigation__item"><a href="#przepisy">Przepisy</a></li>
+        <li class="navigation__item"><a href="#produkty">Produkty</a></li>
+        <li class="navigation__item"><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
 
-      </header>
+    <header
+      class="header"
+      data-vide-bg="Planetamiodu"
+      style="background-color:rgba(0,0,0,0.1);"
+    >
+      <button class="hamburger">
+        <span class="hamburger__box">
+          <span class="hamburger__inner"></span>
+        </span>
+      </button>
+      <p class="logo">Planetamiodu</p>
+    </header>
 
-      <main>
-         <div class="about">
-           <div class="container">
-             <h1 id="omnie">O mnie</h1>
-             <div class="user">
-               <p class="user-text">Bartłomiej</p>
-               <p class="user-text surname">Kozioł</p>
-               <img src="./img/user.jpg" alt="" />
+    <main>
+        <div class="about">
+          <div class="container">
+            <h1 id="omnie">O mnie</h1>
+            <div class="user">
+              <p class="user-text">Bartłomiej</p>
+              <p class="user-text surname">Kozioł</p>
+              <img src="images/user.jpg" alt="" />
                <div class="text-about">
                  <p>
                    Kucharz z zawodu. Doświadczony sushi master z ponad 10 letnim
@@ -67,197 +61,208 @@
                    sushi barze w Gliwicach - Arigato.
                  </p>
                </div>
-             </div>
             </div>
-            <div class="waves">
-              <svg
-                class="wave wave-one"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1440 320"
-              >
-                <path
-                  fill="#ffd700"
-                  fill-opacity="1"
-                  d="M0,96L34.3,122.7C68.6,149,137,203,206,197.3C274.3,192,343,128,411,133.3C480,139,549,213,617,240C685.7,267,754,245,823,218.7C891.4,192,960,160,1029,165.3C1097.1,171,1166,213,1234,245.3C1302.9,277,1371,299,1406,309.3L1440,320L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-                ></path>
-              </svg>
-              <svg
-                class="wave wave-two"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1440 320"
-              >
-                <path
-                  fill="#ffde3a"
-                  fill-opacity="1"
-                  d="M0,96L34.3,122.7C68.6,149,137,203,206,197.3C274.3,192,343,128,411,133.3C480,139,549,213,617,240C685.7,267,754,245,823,218.7C891.4,192,960,160,1029,165.3C1097.1,171,1166,213,1234,245.3C1302.9,277,1371,299,1406,309.3L1440,320L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-                ></path>
-              </svg>
-     </div>
-      </div>
+          </div>
 
-      <div class="recipt">
-         <div class="recipt-inner">
-           <div class="container">
-             <h1 id="przepisy" class="title-recipt">
-               Słodko, zdrowo, naturalnie
-             </h1>
-             <div class="box-text-recipt">
-               <div class="text-recipt text-recipt-one">
-                 <p>
-                  Słodko, zdrowo i w dodatku naturalnie?
-                  Czy jest to w ogóle możliwe? Oczywiście,
-                  że tak jeżeli mowa o miodzie, który zyskał miano najsłodszego,
-                  a zarazem bardzo zdrowego produktu spożywczego.
-                  Miód wszakże pomaga organizmowi walczyć z drobnoustrojami,
-                  pobudza układ odpornościowy oraz poprawia trawienie.
-                  Miód posiada również w swoim składzie właściwości konserwujące oraz
-                  przeciwutleniające, które działają antybiotycznie oraz regeneracyjnie
-                  pomagące w leczeniu wielu ran. Co ciekawe miód jest jednym z nielicznych
-                  produktów odżywczych, który się nie psuje. O dobroczynnych
-                  właściwościach miodu mogą świadczyć słowa wypowiedziane
-                  przez starożytnego filozofa Demokryta, który pytany o to,
-                  jak w dobrym zdrowiu dożyć sędziwego wieku odpowiadał
-                  "z zewnątrz olej, a do wewnątrz miód".
-                 </p>
-               </div>
-               <div class="img-slodko">
-                <img class="img-recipt" src="./img/recipt.jpg" alt="" />
-                <img class="img-recipt-two" src="./img/recipt-two.jpg" alt="" />
-              </div>
-               <div class="text-recipt white-box">
-                 <p>
-                  Miód można wykorzystać na wiele róznych sposobów:
-                  jako lekarstwo na kaszel, do odżywiania i nawilżania skóry,
-                  na problemy z zaśnięciem, na trądzik, suche usta,
-                  a także na kaca 🙂 Natomiast używajac go
-                  jako produktu spożywczego miód może służyć
-                  jako marynata, być zdrowszym zamiennikiem cukru.
-                  Miód także doskonale łączy się z różnego rodzaju
-                  sałatkami, może być idealnym dodatkiem do ryb.
+          <div class="waves">
+            <svg
+              class="wave wave-one"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#ffd700"
+                fill-opacity="1"
+                d="M0,96L34.3,122.7C68.6,149,137,203,206,197.3C274.3,192,343,128,411,133.3C480,139,549,213,617,240C685.7,267,754,245,823,218.7C891.4,192,960,160,1029,165.3C1097.1,171,1166,213,1234,245.3C1302.9,277,1371,299,1406,309.3L1440,320L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+              ></path>
+            </svg>
+            <svg
+              class="wave wave-two"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#ffde3a"
+                fill-opacity="1"
+                d="M0,96L34.3,122.7C68.6,149,137,203,206,197.3C274.3,192,343,128,411,133.3C480,139,549,213,617,240C685.7,267,754,245,823,218.7C891.4,192,960,160,1029,165.3C1097.1,171,1166,213,1234,245.3C1302.9,277,1371,299,1406,309.3L1440,320L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
 
-                 </p>
-                 <p>Przykładowe potrawy:</p>
-                 <ul class="potrawy">
-                   <li>marynowane skrzydełka w miodzie</li">
-                   <li>pieczony kurczak posmarowany miodem i posypany
-                    sezamem</li>
+        <div class="recipt">
+          <div class="recipt-inner">
+            <div class="container">
+                <h1 id="przepisy" class="title-recipt">
+                  Słodko, zdrowo, naturalnie
+                </h1>
+              <div class="box-text-recipt">
+                <div class="text-recipt text-recipt-one">
+                  <p>
+                    Słodko, zdrowo i w dodatku naturalnie?
+                    Czy jest to w ogóle możliwe? Oczywiście,
+                    że tak jeżeli mowa o miodzie, który zyskał miano najsłodszego,
+                    a zarazem bardzo zdrowego produktu spożywczego.
+                    Miód wszakże pomaga organizmowi walczyć z drobnoustrojami,
+                    pobudza układ odpornościowy oraz poprawia trawienie.
+                    Miód posiada również w swoim składzie właściwości konserwujące oraz
+                    przeciwutleniające, które działają antybiotycznie oraz regeneracyjnie
+                    pomagące w leczeniu wielu ran. Co ciekawe miód jest jednym z nielicznych
+                    produktów odżywczych, który się nie psuje. O dobroczynnych
+                    właściwościach miodu mogą świadczyć słowa wypowiedziane
+                    przez starożytnego filozofa Demokryta, który pytany o to,
+                    jak w dobrym zdrowiu dożyć sędziwego wieku odpowiadał
+                    "z zewnątrz olej, a do wewnątrz miód".
+                  </p>
+                </div>
+                <div class="img-slodko">
+                  <img class="img-recipt" src="images/recipt.jpg" alt="" />
+                  <img class="img-recipt-two" src="images/recipt-two.jpg" alt="" />
+                </div>
+                <div class="text-recipt white-box">
+                  <p>
+                    Miód można wykorzystać na wiele róznych sposobów:
+                    jako lekarstwo na kaszel, do odżywiania i nawilżania skóry,
+                    na problemy z zaśnięciem, na trądzik, suche usta,
+                    a także na kaca 🙂 Natomiast używajac go
+                    jako produktu spożywczego miód może służyć
+                    jako marynata, być zdrowszym zamiennikiem cukru.
+                    Miód także doskonale łączy się z różnego rodzaju
+                    sałatkami, może być idealnym dodatkiem do ryb.
+                  </p>
+                  <p>Przykładowe potrawy:</p>
+                  <ul class="potrawy">
+                    <li>marynowane skrzydełka w miodzie</li>
+                    <li>pieczony kurczak posmarowany miodem i posypanysezamem</li>
                     <li>miodowe batony z płatków owsianych</li>
                     <li>miodowe żeberka z Burbonem i limonką i wiele więcej.</li>
-                 </ul>
-               </div>
-
-             </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-         </div>
-         <div class="waves">
-           <svg
-             class="wave wave-three"
-             xmlns="http://www.w3.org/2000/svg"
-             viewBox="0 0 1440 320"
-           >
-            <path
-              fill="#000000"
-              fill-opacity="1"
-              d="M0,320L9.6,304C19.2,288,38,256,58,224C76.8,192,96,160,115,160C134.4,160,154,192,173,176C192,160,211,96,230,80C249.6,64,269,96,288,112C307.2,128,326,128,346,117.3C364.8,107,384,85,403,106.7C422.4,128,442,192,461,224C480,256,499,256,518,234.7C537.6,213,557,171,576,165.3C595.2,160,614,192,634,192C652.8,192,672,160,691,138.7C710.4,117,730,107,749,117.3C768,128,787,160,806,176C825.6,192,845,192,864,170.7C883.2,149,902,107,922,106.7C940.8,107,960,149,979,149.3C998.4,149,1018,107,1037,101.3C1056,96,1075,128,1094,122.7C1113.6,117,1133,75,1152,101.3C1171.2,128,1190,224,1210,256C1228.8,288,1248,256,1267,208C1286.4,160,1306,96,1325,90.7C1344,85,1363,139,1382,138.7C1401.6,139,1421,85,1430,58.7L1440,32L1440,0L1430.4,0C1420.8,0,1402,0,1382,0C1363.2,0,1344,0,1325,0C1305.6,0,1286,0,1267,0C1248,0,1229,0,1210,0C1190.4,0,1171,0,1152,0C1132.8,0,1114,0,1094,0C1075.2,0,1056,0,1037,0C1017.6,0,998,0,979,0C960,0,941,0,922,0C902.4,0,883,0,864,0C844.8,0,826,0,806,0C787.2,0,768,0,749,0C729.6,0,710,0,691,0C672,0,653,0,634,0C614.4,0,595,0,576,0C556.8,0,538,0,518,0C499.2,0,480,0,461,0C441.6,0,422,0,403,0C384,0,365,0,346,0C326.4,0,307,0,288,0C268.8,0,250,0,230,0C211.2,0,192,0,173,0C153.6,0,134,0,115,0C96,0,77,0,58,0C38.4,0,19,0,10,0L0,0Z">
-            </path>
-          </svg>
-           <svg
-             class="wave wave-four"
-             xmlns="http://www.w3.org/2000/svg"
-             viewBox="0 0 1440 320"
-           >
-           <path
-           fill="#ffde3a"
-           fill-opacity="1"
-           d="M0,320L9.6,304C19.2,288,38,256,58,224C76.8,192,96,160,115,160C134.4,160,154,192,173,176C192,160,211,96,230,80C249.6,64,269,96,288,112C307.2,128,326,128,346,117.3C364.8,107,384,85,403,106.7C422.4,128,442,192,461,224C480,256,499,256,518,234.7C537.6,213,557,171,576,165.3C595.2,160,614,192,634,192C652.8,192,672,160,691,138.7C710.4,117,730,107,749,117.3C768,128,787,160,806,176C825.6,192,845,192,864,170.7C883.2,149,902,107,922,106.7C940.8,107,960,149,979,149.3C998.4,149,1018,107,1037,101.3C1056,96,1075,128,1094,122.7C1113.6,117,1133,75,1152,101.3C1171.2,128,1190,224,1210,256C1228.8,288,1248,256,1267,208C1286.4,160,1306,96,1325,90.7C1344,85,1363,139,1382,138.7C1401.6,139,1421,85,1430,58.7L1440,32L1440,0L1430.4,0C1420.8,0,1402,0,1382,0C1363.2,0,1344,0,1325,0C1305.6,0,1286,0,1267,0C1248,0,1229,0,1210,0C1190.4,0,1171,0,1152,0C1132.8,0,1114,0,1094,0C1075.2,0,1056,0,1037,0C1017.6,0,998,0,979,0C960,0,941,0,922,0C902.4,0,883,0,864,0C844.8,0,826,0,806,0C787.2,0,768,0,749,0C729.6,0,710,0,691,0C672,0,653,0,634,0C614.4,0,595,0,576,0C556.8,0,538,0,518,0C499.2,0,480,0,461,0C441.6,0,422,0,403,0C384,0,365,0,346,0C326.4,0,307,0,288,0C268.8,0,250,0,230,0C211.2,0,192,0,173,0C153.6,0,134,0,115,0C96,0,77,0,58,0C38.4,0,19,0,10,0L0,0Z">
-          </path>
-       </svg>
-         </div>
-      </div>
 
-      <div class="products">
-         <div class="container">
-           <h1 id="produkty">Produkty</h1>
-           <div style="height: 300px;">
-             jakis content o wysokosci 200px na przyklad
-           </div>
-         </div>
-         <div class="waves">
-           <svg
-             class="wave wave-five"
-             xmlns="http://www.w3.org/2000/svg"
-             viewBox="0 0 1440 320"
-           >
-             <path
-               fill="#0b0b0b"
-               fill-opacity="1"
-               d="M0,64L16,90.7C32,117,64,171,96,160C128,149,160,75,192,48C224,21,256,43,288,64C320,85,352,107,384,106.7C416,107,448,85,480,106.7C512,128,544,192,576,218.7C608,245,640,235,672,202.7C704,171,736,117,768,128C800,139,832,213,864,256C896,299,928,309,960,266.7C992,224,1024,128,1056,90.7C1088,53,1120,75,1152,90.7C1184,107,1216,117,1248,144C1280,171,1312,213,1344,234.7C1376,256,1408,256,1424,256L1440,256L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"
-             ></path>
-           </svg>
-           <svg
-             class="wave wave-six"
-             xmlns="http://www.w3.org/2000/svg"
-             viewBox="0 0 1440 320"
-           >
-             <path
-               fill="#ffd700"
-               fill-opacity="1"
-               d="M0,256L21.8,245.3C43.6,235,87,213,131,197.3C174.5,181,218,171,262,138.7C305.5,107,349,53,393,53.3C436.4,53,480,107,524,122.7C567.3,139,611,117,655,106.7C698.2,96,742,96,785,122.7C829.1,149,873,203,916,218.7C960,235,1004,213,1047,176C1090.9,139,1135,85,1178,74.7C1221.8,64,1265,96,1309,96C1352.7,96,1396,64,1418,48L1440,32L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-             ></path>
-           </svg>
-         </div>
+          <div class="waves">
+            <svg
+              class="wave wave-three"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#000000"
+                fill-opacity="1"
+                d="M0,320L9.6,304C19.2,288,38,256,58,224C76.8,192,96,160,115,160C134.4,160,154,192,173,176C192,160,211,96,230,80C249.6,64,269,96,288,112C307.2,128,326,128,346,117.3C364.8,107,384,85,403,106.7C422.4,128,442,192,461,224C480,256,499,256,518,234.7C537.6,213,557,171,576,165.3C595.2,160,614,192,634,192C652.8,192,672,160,691,138.7C710.4,117,730,107,749,117.3C768,128,787,160,806,176C825.6,192,845,192,864,170.7C883.2,149,902,107,922,106.7C940.8,107,960,149,979,149.3C998.4,149,1018,107,1037,101.3C1056,96,1075,128,1094,122.7C1113.6,117,1133,75,1152,101.3C1171.2,128,1190,224,1210,256C1228.8,288,1248,256,1267,208C1286.4,160,1306,96,1325,90.7C1344,85,1363,139,1382,138.7C1401.6,139,1421,85,1430,58.7L1440,32L1440,0L1430.4,0C1420.8,0,1402,0,1382,0C1363.2,0,1344,0,1325,0C1305.6,0,1286,0,1267,0C1248,0,1229,0,1210,0C1190.4,0,1171,0,1152,0C1132.8,0,1114,0,1094,0C1075.2,0,1056,0,1037,0C1017.6,0,998,0,979,0C960,0,941,0,922,0C902.4,0,883,0,864,0C844.8,0,826,0,806,0C787.2,0,768,0,749,0C729.6,0,710,0,691,0C672,0,653,0,634,0C614.4,0,595,0,576,0C556.8,0,538,0,518,0C499.2,0,480,0,461,0C441.6,0,422,0,403,0C384,0,365,0,346,0C326.4,0,307,0,288,0C268.8,0,250,0,230,0C211.2,0,192,0,173,0C153.6,0,134,0,115,0C96,0,77,0,58,0C38.4,0,19,0,10,0L0,0Z">
+              </path>
+            </svg>
+            <svg
+              class="wave wave-four"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#ffde3a"
+                fill-opacity="1"
+                d="M0,320L9.6,304C19.2,288,38,256,58,224C76.8,192,96,160,115,160C134.4,160,154,192,173,176C192,160,211,96,230,80C249.6,64,269,96,288,112C307.2,128,326,128,346,117.3C364.8,107,384,85,403,106.7C422.4,128,442,192,461,224C480,256,499,256,518,234.7C537.6,213,557,171,576,165.3C595.2,160,614,192,634,192C652.8,192,672,160,691,138.7C710.4,117,730,107,749,117.3C768,128,787,160,806,176C825.6,192,845,192,864,170.7C883.2,149,902,107,922,106.7C940.8,107,960,149,979,149.3C998.4,149,1018,107,1037,101.3C1056,96,1075,128,1094,122.7C1113.6,117,1133,75,1152,101.3C1171.2,128,1190,224,1210,256C1228.8,288,1248,256,1267,208C1286.4,160,1306,96,1325,90.7C1344,85,1363,139,1382,138.7C1401.6,139,1421,85,1430,58.7L1440,32L1440,0L1430.4,0C1420.8,0,1402,0,1382,0C1363.2,0,1344,0,1325,0C1305.6,0,1286,0,1267,0C1248,0,1229,0,1210,0C1190.4,0,1171,0,1152,0C1132.8,0,1114,0,1094,0C1075.2,0,1056,0,1037,0C1017.6,0,998,0,979,0C960,0,941,0,922,0C902.4,0,883,0,864,0C844.8,0,826,0,806,0C787.2,0,768,0,749,0C729.6,0,710,0,691,0C672,0,653,0,634,0C614.4,0,595,0,576,0C556.8,0,538,0,518,0C499.2,0,480,0,461,0C441.6,0,422,0,403,0C384,0,365,0,346,0C326.4,0,307,0,288,0C268.8,0,250,0,230,0C211.2,0,192,0,173,0C153.6,0,134,0,115,0C96,0,77,0,58,0C38.4,0,19,0,10,0L0,0Z">
+              </path>
+            </svg>
+          </div>
+        </div>
 
-      </div>
+        <div class="products">
+          <div class="container">
+            <h1 id="produkty">Produkty</h1>
+            <div style="height: 300px;">
+              jakis content o wysokosci 200px na przyklad
+            </div>
+          </div>
+          <div class="waves">
+            <svg
+              class="wave wave-five"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#0b0b0b"
+                fill-opacity="1"
+                d="M0,64L16,90.7C32,117,64,171,96,160C128,149,160,75,192,48C224,21,256,43,288,64C320,85,352,107,384,106.7C416,107,448,85,480,106.7C512,128,544,192,576,218.7C608,245,640,235,672,202.7C704,171,736,117,768,128C800,139,832,213,864,256C896,299,928,309,960,266.7C992,224,1024,128,1056,90.7C1088,53,1120,75,1152,90.7C1184,107,1216,117,1248,144C1280,171,1312,213,1344,234.7C1376,256,1408,256,1424,256L1440,256L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"
+              ></path>
+            </svg>
+            <svg
+              class="wave wave-six"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#ffd700"
+                fill-opacity="1"
+                d="M0,256L21.8,245.3C43.6,235,87,213,131,197.3C174.5,181,218,171,262,138.7C305.5,107,349,53,393,53.3C436.4,53,480,107,524,122.7C567.3,139,611,117,655,106.7C698.2,96,742,96,785,122.7C829.1,149,873,203,916,218.7C960,235,1004,213,1047,176C1090.9,139,1135,85,1178,74.7C1221.8,64,1265,96,1309,96C1352.7,96,1396,64,1418,48L1440,32L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
 
-      <div class="con">
-         <div class="container">
-           <h1 id="kontakt">Kontakt</h1>
-           <div class="contact-box">
-             <div class="contact">
-               <p class="send-us">Wyślij nam wiadomość</p>
-               <p class="text-info">Odpowiemy jak najszybciej to możliwe</p>
-               <p class="info-title">Email</p>
-               <a class="a-info" href="mailto:planetamiodu@gmail.com"
-                 >planetamiodu@gmail.com</a
-               >
-               <p class="info-title">Telefon</p>
-               <a class="a-info" href="tel:+48123123123">+48 123 123 123</a>
-               <p class="info-title">Adres</p>
-               <p class="a-info">
-                 ul. Nowy Świat 23 <br />
-                 40-467 Katowice
-               </p>
-             </div>
-             <div class="form">
-               <form action="#" method="post">
-                 <p>Imię</p>
-                 <br />
-                 <input type="text" name="name" id="name" required />
-                 <br />
-                 <p>Nazwisko</p>
-                 <br />
-                 <input type="text" name="surname" id="surname" required />
-                 <br />
-                 <p>Wiadomość</p>
-                 <br />
-                   <textarea name="wiadomosc" id="wiadomosc" requiredname="" id="" cols="30" rows="10"></textarea>
-                 <br />
-                 <button type="submit">Wyślij</button>
-               </form>
-             </div>
-           </div>
+        <div class="con">
+          <div class="container">
+            <h1 id="kontakt">Kontakt</h1>
+            <div class="contact-box">
+              <div class="contact">
+                <p class="send-us">Wyślij nam wiadomość</p>
+                <p class="text-info">Odpowiemy jak najszybciej to możliwe</p>
+                <p class="info-title">Email</p>
+                <a class="a-info" href="mailto:planetamiodu@gmail.com">planetamiodu@gmail.com</a>
+                <p class="info-title">Telefon</p>
+                <a class="a-info" href="tel:+48123123123">+48 123 123 123</a>
+                <p class="info-title">Adres</p>
+                <p class="a-info">ul. Nowy Świat 23 <br />40-467 Katowice</p>
+              </div>
+              <div class="form">
+                <form action="#" method="post">
+                  <p>Imię</p>
+                  <br />
+                  <input type="text" name="name" id="name" required />
+                  <br />
+                  <p>Nazwisko</p>
+                  <br />
+                  <input type="text" name="surname" id="surname" required />
+                  <br />
+                  <p>Wiadomość</p>
+                  <br />
+                  <textarea name="wiadomosc" id="wiadomosc" requiredname="" id="" cols="30" rows="10"></textarea>
+                  <br />
+                  <button type="submit">Wyślij</button>
+                </form>
+              </div>
+            </div>
            <iframe src="https://snazzymaps.com/embed/184497" width="100%" height="300px" style="border:none;"></iframe>
          </div>
       </div>
+
       <div class="social-media">
-            <a class="sm-circle" href="https://www.facebook.com"
-          ><svg class="sm-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>     </a>
+        <a class="sm-circle" href="https://www.facebook.com">
+          <svg
+            class="sm-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+          </svg>
+        </a>
         <a class="sm-circle" class="sm-circle" href="https://www.instagram.com">
-          <svg class="sm-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-         </a>
+          <svg
+            class="sm-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
     </main>
-
-
 
    <script>
       var $ = document.querySelector.bind(document);
@@ -326,6 +331,6 @@
         });
       });
 
-      </script>
-</body>
+    </script>
+  </body>
 </html>
