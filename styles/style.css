@@ -507,6 +507,20 @@ h3 {
 	margin: 5px;
 	padding: 2px;
 }
+
+.sloiki {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.img-sloik {
+	width: 250px;
+	height: 374.5px;
+	border-radius: 20px;
+	margin: 10px auto;
+	border: 2px solid gold;
+}
 @media only screen and (max-width: 769px) {
 	.mouse-ball {
 		display: none;
@@ -689,6 +703,18 @@ h3 {
 	}
 	.text-recipt p {
 		font-size: 26px;
+	}
+
+	.sloiki {
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+	}
+	.img-sloik {
+		width: 250px;
+		height: 374.5px;
+		border-radius: 20px;
+		margin: 50px;
 	}
 }
 
